@@ -19,6 +19,10 @@ class LoginRequest(BaseModel):
     email: EmailStr
     password: str = Field(..., min_length=8)
 
+
+class MagicLinkRequest(BaseModel):
+    email: EmailStr
+
 # --- INVOICE REQUESTS ---
 class InvoiceCreate(BaseModel):
     amount: float = Field(..., gt=0, description="Invoice amount must be greater than zero")

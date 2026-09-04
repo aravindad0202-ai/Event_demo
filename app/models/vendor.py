@@ -17,3 +17,6 @@ class Vendor(Base):
     # Relationships
     invoices = relationship("Invoice", back_populates="vendor", cascade="all, delete-orphan")
     documents = relationship("Document", back_populates="vendor", cascade="all, delete-orphan")
+    magic_link_tokens = relationship(
+        "MagicLinkToken", back_populates="vendor", cascade="all, delete-orphan"
+    )

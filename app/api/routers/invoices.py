@@ -6,7 +6,7 @@ from app.core.database import get_db
 from app.models.vendor import Vendor
 from app.models.invoice import Invoice
 from app.schemas.requests import InvoiceCreate, InvoiceStatusUpdate
-from app.schemas.responses import InvoiceResponse
+from app.schemas.response import InvoiceResponse
 from app.api.dependencies import get_current_vendor
 
 router = APIRouter(prefix="/invoices", tags=["Invoices"])

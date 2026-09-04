@@ -9,6 +9,7 @@ class Settings(BaseSettings):
     SECRET_KEY: str
     ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 60
+    MAGIC_LINK_BASE_URL: str = "http://localhost:8000"
     
     # Database URL (Read securely from .env)
     DATABASE_URL: str

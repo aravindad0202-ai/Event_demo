@@ -7,6 +7,10 @@ class TokenResponse(BaseModel):
     access_token: str
     token_type: str = "bearer"
 
+
+class MagicLinkRequestResponse(BaseModel):
+    message: str
+
 # --- VENDOR RESPONSES ---
 class VendorResponse(BaseModel):
     id: int

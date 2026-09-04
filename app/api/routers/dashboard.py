@@ -3,7 +3,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.database import get_db
 from app.models.vendor import Vendor
-from app.schemas.responses import DashboardMetricsResponse
+from app.schemas.response import DashboardMetricsResponse
 from app.services.analytics_service import AnalyticsService
 from app.api.dependencies import get_current_vendor
 
